@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package todos;
+
+// @description returns todo!
+// @read-only true
+message todo_arguments {
+  string task = 1;
+}
+
+message todo_result {
+  string value = 1;
+}
+
+message todo_object {
+  string task = 1;
+}

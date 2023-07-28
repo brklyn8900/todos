@@ -1,0 +1,12 @@
+{
+    "methods": {
+        "todo": {
+            "argument": "todos.todo_arguments",
+            "return": "todos.todo_result",
+            "description": "returns todo!",
+            "entry-point": "0x602fae58",
+            "read-only": true
+        }
+    },
+    "types": "CpkBChphc3NlbWJseS9wcm90by90b2Rvcy5wcm90bxIFdG9kb3MiJAoOdG9kb19hcmd1bWVudHMSEgoEdGFzaxgBIAEoCVIEdGFzayIjCgt0b2RvX3Jlc3VsdBIUCgV2YWx1ZRgBIAEoCVIFdmFsdWUiIQoLdG9kb19vYmplY3QSEgoEdGFzaxgBIAEoCVIEdGFza2IGcHJvdG8z"
+}
