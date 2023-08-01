@@ -1,5 +1,4 @@
-# Created by https://www.toptal.com/developers/gitignore/api/osx,yarn,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=osx,yarn,node
+./build
 
 ### Node ###
 # Logs
@@ -187,4 +186,3 @@ Temporary Items
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/osx,yarn,node
