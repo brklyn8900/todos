@@ -1,10 +1,17 @@
 {
     "methods": {
-        "todo": {
-            "input": "todos.todo_arguments",
-            "output": "todos.todo_result",
-            "description": "returns todo!",
-            "entryPoint": 1613737560,
+        "add_todo": {
+            "input": "todos.add_todo_arguments",
+            "output": "todos.add_todo_result",
+            "description": "Add todo to the todo list",
+            "entryPoint": 3117429482,
+            "readOnly": false
+        },
+        "get_todos": {
+            "input": "todos.get_todos_arguments",
+            "output": "todos.get_todos_result",
+            "description": "Returns the list of todos",
+            "entryPoint": 3122823642,
             "readOnly": true
         }
     },
@@ -12,7 +19,7 @@
         "nested": {
             "todos": {
                 "nested": {
-                    "todo_arguments": {
+                    "add_todo_arguments": {
                         "fields": {
                             "task": {
                                 "type": "string",
@@ -20,9 +27,16 @@
                             }
                         }
                     },
-                    "todo_result": {
+                    "add_todo_result": {
+                        "fields": {}
+                    },
+                    "get_todos_arguments": {
+                        "fields": {}
+                    },
+                    "get_todos_result": {
                         "fields": {
                             "value": {
+                                "rule": "repeated",
                                 "type": "string",
                                 "id": 1
                             }
@@ -30,7 +44,8 @@
                     },
                     "todo_object": {
                         "fields": {
-                            "task": {
+                            "tasks": {
+                                "rule": "repeated",
                                 "type": "string",
                                 "id": 1
                             }

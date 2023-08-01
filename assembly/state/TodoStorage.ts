@@ -4,7 +4,7 @@ import { todos } from '../proto/todos';
 import { TODOS_SPACE_ID } from './SpaceIds';
 
 
-export class Task extends Storage.Obj<todos.todo_object> {
+export class TodoStorage extends Storage.Obj<todos.todo_object> {
     constructor(contractId: Uint8Array) {
         super(
             contractId,
